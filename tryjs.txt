@@ -1,0 +1,217 @@
+The easiest way to run the example code in the book, and to experiment with
+it, is to look it up in the online version of the book at https://eloquentjavascript.net.
+There, you can click any code example to edit and run it and to see the output
+it produces. To work on the exercises, go to https://eloquentjavascript.net/
+code, which provides starting code for each coding exercise and allows you to
+look at the solutions.
+
+
+
+There is only one value in javascript that is not equal itself,
+and that is NaN("not a number")
+console.log(NaN == NaN)
+// --> false
+
+
+chapter 2
+
+Digits can be part of binding names -- catch22 is a valid name, for example - but the name must not
+start with a digit. A binding name may include dollar signs($) or underscore(-) but no other
+punctuation or special character
+
+arrow => madeup of an equal sign and a greater-than sign
+
+
+start from page 47 CLOSURE
+
+A function that calls itself is called recursive
+
+
+
+starts from chapter 4
+
+
+https://eloquentjavascript.net/code/#22
+
+
+start from chapter 5
+
+
+start from chapter 6
+
+Properties that are part of the interface are called
+public. The other, which outside code should not be touching,
+are called private.
+
+
+so we are starting from chapter 7
+
+
+Data structures that don’t change are called immutable or persistent. They
+behave a lot like strings and numbers in that they are who they are and stay
+that way, rather than containing different things at different times.
+
+
+so we should start from the chapter 8
+
+
+Within square brackets, a hyphen (-) between two characters can be used
+to indicate a range of characters, where the ordering is determined by the
+character’s Unicode number. Characters 0 to 9 sit right next to each other in
+this ordering (codes 48 to 57), so [0-9] covers all of them and matches any
+digit.
+A number of common character groups have their own built-in shortcuts.
+Digits are one of them: \d means the same thing as [0-9].
+\d Any digit character
+\w An alphanumeric character (“word character”)
+\s Any whitespace character (space, tab, newline, and similar)
+\D A character that is not a digit
+\W A nonalphanumeric character
+\S A nonwhitespace character
+. Any character except for newline
+So you could match a date and time format like 01-30-2003 15:20 with the
+following expression
+
+
+To invert a set of characters—that is, to express that you want to match any
+character except the ones in the set—you can write a caret (^) character after
+the opening bracket.
+
+^ caret character
+
+
+JavaScript uses a convention where month numbers start at zero (so De-
+cember is 11), yet day numbers start at one. This is confusing and silly. Be
+careful.
+
+
+Date objects provide methods such as getFullYear, getMonth, getDate, getHours
+, getMinutes, and getSeconds to extract their components. Besides getFullYear
+there’s also getYear, which gives you the year minus 1900 (98 or 119) and is
+mostly useless.
+
+
+Because of this behavior, we say the repetition operators (+, *, ?, and {}
+) are greedy, meaning they match as much as they can and backtrack from
+there. If you put a question mark after them (+?, *?, ??, {}?), they become
+nongreedy and start by matching as little as possible, matching more only when
+the remaining pattern does not fit the smaller match.
+
+
+start from page 162
+International Character
+
+/abc/ A sequence of characters
+/[abc]/ Any character from a set of characters
+/[^abc]/ Any character not in a set of characters
+/[0-9]/ Any character in a range of characters
+/x+/ One or more occurrences of the pattern x
+/x+?/ One or more occurrences, nongreedy
+/x*/ Zero or more occurrences
+/x?/ Zero or one occurrence
+/x{2,4}/ Two to four occurrences
+/(abc)/ A group
+/a|b|c/ Any one of several patterns
+/\d/ Any digit character
+/\w/ An alphanumeric character (“word character”)
+/\s/ Any whitespace character
+/./ Any character except newlines
+/\b/ A word boundary
+/^/ Start of input
+/$/ End of input
+
+
+When it starts with "./" or "../",
+it is generally interpreted as relative to the current module’s filename. So "./
+format-date" would be the file named format-date.js in the same directory.
+When the name isn’t relative, Node.js will look for an installed package by
+that name. In the example code in this chapter, we’ll interpret such names as
+referring to NPM packages. We’ll go into more detail on how to install and use
+NPM modules in Chapter 20.
+
+
+
+we start from chapter 11
+
+
+we need pratice chapter 11 from the website functionality
+
+When you define a function with function* (placing an asterisk after the
+word function), it becomes a generator. When you call a generator, it returns
+an iterator, which we already saw in Chapter 6.
+
+
+
+start from chapter 12
+
+
+we also need to do the exercise from the chapter 12 to the given website
+
+
+we need to start from chapter 13
+
+
+
+start from chapter 15
+
+
+start from chapter 16
+
+
+we dont write any code from chapter 16
+
+
+start from drawing
+
+
+There are currently two widely
+supported drawing styles: "2d" for two-dimensional graphics and "webgl" for
+three-dimensional graphics through the OpenGL interface
+
+
+we should start from curves 289 pages
+
+
+
+
+start from text page 292
+
+
+
+start from chapter 18
+
+
+Status codes starting with a 2 indicate that the request succeeded. Codes
+starting with 4 mean there was something wrong with the request. 404 is
+probably the most famous HTTP status code—it means that the resource could
+not be found. Codes that start with 5 mean an error happened on the server
+and the request is not to blame
+
+
+The question mark indicates the end of the path part of the URL and the
+start of the query. It is followed by pairs of names and values, corresponding to
+the name attribute on the form field elements and the content of those elements,
+respectively. An ampersand character (&) is used to separate the pairs
+
+
+The actual message encoded in the URL is “Yes?”, but the question mark is
+replaced by a strange code. Some characters in query strings must be escaped.
+The question mark, represented as %3F, is one of those. There seems to be
+an unwritten rule that every format needs its own way of escaping characters.
+This one, called URL encoding, uses a percent sign followed by two hexadecimal
+(base 16) digits that encode the character code. In this case, 3F, which is 63
+in decimal notation, is the code of a question mark character. JavaScript
+provides the encodeURIComponent and decodeURIComponent functions to encode
+and decode this format
+
+
+start from chapter 19
+
+start from chapter 20
+
+
+start from chapter 21
+
+
+
+
